@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="ToDoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordText" destination="vWH-As-xMU" id="654-g7-Co2"/>
+                <outlet property="usernameText" destination="zCZ-CD-AGD" id="enr-cQ-pnu"/>
+                <outlet property="verifyPasswordText" destination="SOu-Hu-3V4" id="zsJ-Og-7zd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCZ-CD-AGD">
+                    <rect key="frame" x="32" y="187" width="312" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vWH-As-xMU">
+                    <rect key="frame" x="32" y="255" width="312" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOu-Hu-3V4">
+                    <rect key="frame" x="32" y="321" width="312" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-lc-L8q">
+                    <rect key="frame" x="146" y="431" width="84" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                    <connections>
+                        <action selector="signUpButton:" destination="-1" eventType="touchUpInside" id="jX9-17-XZj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vWH-As-xMU" firstAttribute="trailing" secondItem="SOu-Hu-3V4" secondAttribute="trailing" id="0k7-mN-ZX2"/>
+                <constraint firstItem="vWH-As-xMU" firstAttribute="leading" secondItem="SOu-Hu-3V4" secondAttribute="leading" id="3tj-id-7cj"/>
+                <constraint firstItem="pRn-lc-L8q" firstAttribute="top" secondItem="SOu-Hu-3V4" secondAttribute="bottom" constant="76" id="CBK-30-QRY"/>
+                <constraint firstItem="SOu-Hu-3V4" firstAttribute="top" secondItem="vWH-As-xMU" secondAttribute="bottom" constant="32" id="VvL-dP-9RU"/>
+                <constraint firstItem="SOu-Hu-3V4" firstAttribute="centerX" secondItem="pRn-lc-L8q" secondAttribute="centerX" id="cCa-GL-A5h"/>
+                <constraint firstItem="zCZ-CD-AGD" firstAttribute="trailing" secondItem="vWH-As-xMU" secondAttribute="trailing" id="f6I-uO-CuK"/>
+                <constraint firstItem="vWH-As-xMU" firstAttribute="top" secondItem="zCZ-CD-AGD" secondAttribute="bottom" constant="34" id="mIM-oz-Sco"/>
+                <constraint firstItem="zCZ-CD-AGD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="128" id="mwf-DJ-ci5"/>
+                <constraint firstItem="zCZ-CD-AGD" firstAttribute="leading" secondItem="vWH-As-xMU" secondAttribute="leading" id="qzl-66-PDd"/>
+                <constraint firstItem="pRn-lc-L8q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="146" id="txa-Nl-yJk"/>
+                <constraint firstItem="zCZ-CD-AGD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="xjs-4S-Nd1"/>
+            </constraints>
+            <point key="canvasLocation" x="58" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
