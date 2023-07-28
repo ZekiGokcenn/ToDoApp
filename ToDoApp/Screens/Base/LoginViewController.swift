@@ -24,16 +24,6 @@ final class LoginViewController: UIViewController {
        
         navigationItem.setHidesBackButton(true, animated: false)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        // Geri butonunu gizle
-        self.navigationItem.setHidesBackButton(true, animated: false)
-    }
-
-  
-  
-
 
     @IBAction private func signInButton(_ sender: Any) {
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
